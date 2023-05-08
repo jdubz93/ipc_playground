@@ -29,7 +29,7 @@ int main(void)
 
     /* Note this will not work ( shared_data->message = "Hello World from shared memory"; ) */
     shared_data->num = 1234;
-    std::string str = "Hello World from Shared Memory";
+    std::string str = "Hello World from Shared Memory - this is a new message";
     std::copy(str.begin(), str.end(), shared_data->message);
     shared_data->message[str.size()] = '\0';
 
